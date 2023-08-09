@@ -17,7 +17,12 @@
     "react-native-validic-session": "file:../../Downloads/react-native-validic-aggregator-1.4.3/react-native-validic-session-1.4.3.tgz"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.20",
+    "@types/react-test-renderer": "^18.0.0",
+    "typescript": "^5.1.6"
   },
   "private": true
 }
