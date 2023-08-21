@@ -1,0 +1,36 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+  },
+  "extends": [
+      "standard-with-typescript",
+      "plugin:react/recommended"
+  ],
+  "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "project": ["./tsconfig.json"]
+  },
+  "plugins": [
+      "react",
+      "react-native"
+  ],
+  "ignorePatterns": ["__tests__/*", "__mocks__/*"],
+  "rules": {
+      "space-before-function-paren": "off",
+      "@typescript-eslint/space-before-function-paren": "off",
+      "comma-dangle": "off",
+      "@typescript-eslint/comma-dangle": "off",
+      "semi": "off",
+      "@typescript-eslint/semi": "off",
+      "@typescript-eslint/member-delimiter-style": "off",
+      "object-curly-spacing": "off",
+      "@typescript-eslint/object-curly-spacing": "off",
+      "indent": "off",
+      "@typescript-eslint/indent": "off",
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-extraneous-class": "off"
+  }
+}

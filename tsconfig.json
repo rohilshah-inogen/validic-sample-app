@@ -1,3 +1,17 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2021"],
+    "jsx": "react",
+    "baseUrl": "./",
+    // "paths": {
+    //   "@rpm-app/*": ["app/*/index", "app/*"]
+    // }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }
