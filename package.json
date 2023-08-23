@@ -14,7 +14,9 @@
     "eslint-config-standard-with-typescript": "^35.0.0",
     "react": "18.2.0",
     "react-native": "0.72.4",
-    "react-native-config": "^1.4.11"
+    "react-native-config": "^1.4.11",
+    "react-native-validic-aggregator-ios": "file:react-native-validic-aggregator-ios-1.4.5.tgz",
+    "react-native-validic-session": "file:react-native-validic-session-1.4.5.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
