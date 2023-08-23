@@ -127,12 +127,16 @@ const ConnectWearableScreen = (): JSX.Element => {
     }
 
     function addSubscription(): void {
-        ValidicHealthKit.setSubscriptions([SampleTypes.HKQuantityTypeIdentifierOxygenSaturation]);
+        if (Platform.OS === 'ios') {
+            ValidicHealthKit.setSubscriptions([SampleTypes.HKQuantityTypeIdentifierOxygenSaturation]);
 
-        ValidicHealthKit.getCurrentSubscriptions((subscriptions) => {
-            console.log(subscriptions)
-        })
-        console.log('adding subscription')
+            ValidicHealthKit.getCurrentSubscriptions((subscriptions) => {
+                console.log(subscriptions)
+            })
+            console.log('adding subscription')
+        } else {
+            console.log('not ios')
+        }
     }
 
     return (
